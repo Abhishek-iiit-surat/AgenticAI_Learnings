@@ -1,0 +1,45 @@
+{
+    "query": "latest AI news",
+    "follow_up_questions": null,
+    "answer": null,
+    "images": [],
+    "results": [
+        {
+            "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
+            "title": "Artificial Intelligence News - ScienceDaily",
+            "content": "Explainable AI for Ship Navigation Raises Trust, Decreases Human Error\n\n### Monday, April 14, 2025\n\n AI Tool to Better Assess Parkinson's Disease, Other Movement Disorders\n Photonic Computing Needs More Nonlinearity: Acoustics Can Help\n How the Brain Controls Movement Under Uncertainty\n\n### Thursday, April 10, 2025\n\n AI Tool Set to Speed Quest for Advanced Superconductors\n\n### Wednesday, April 9, 2025 [...] Advancing AI for Diverse Applications in Manufacturing, Business and Education\n\n### Friday, April 25, 2025\n\n Cutting the Complexity from Digital Carpentry\n\n### Thursday, April 24, 2025\n\n Awkward. Humans Are Still Better Than AI at Reading the Room\n Flying Robots Unlock New Horizons in Construction\n Making AI-Generated Code More Accurate in Any Language\n\n### Wednesday, April 23, 2025 [...] June 19, 2025 — Imagine supercomputers that think with light instead of electricity. That s the breakthrough two European research teams have made, demonstrating how intense laser pulses through ultra-thin glass ...\n\nThe AI That Writes Climate-Friendly Cement Recipes in Seconds\n\nJune 19, 2025 — AI researchers in Switzerland have found a way to dramatically cut cement s carbon footprint by redesigning its recipe. Their system simulates thousands of ingredient combinations, pinpointing those ...",
+            "score": 0.7460839,
+            "raw_content": null
+        },
+        {
+            "url": "https://www.artificialintelligence-news.com/",
+            "title": "AI News | Latest AI News, Analysis & Events",
+            "content": "Malaysia launches Ryt Bank, its first AI-powered bank · Google's Veo 3 AI video creation tools are now widely available · AI is rewriting the rules of the",
+            "score": 0.7031221,
+            "raw_content": null
+        },
+        {
+            "url": "https://www.nytimes.com/spotlight/artificial-intelligence",
+            "title": "Artificial Intelligence - The New York Times",
+            "content": "The big fund-raising round was the latest sign of investor fervor for artificial intelligence companies despite concerns that the boom is overheated.\n\nBy Michael J. de la Merced\n\n### A.I. Video Generators Are Now So Good You Can No Longer Trust Your Eyes\n\nWelcome to the era of fakery. The widespread use of instant video generators like Sora will bring an end to visuals as proof.\n\nBy Brian X. Chen\n\n### A.I. Meets Ancient Philosophy [...] By Natasha Singer\n\nHow to Use A.I. for Family Time\n\nPlan meals, find gifts and create stories using generative A.I.\n\n \n\nWhat’s the Future for A.I.?\n\nWhere we’re heading tomorrow, next year and beyond.\n\n By Cade Metz\n\nHow Should I Use A.I. Chatbots Like ChatGPT?\n\nLarge language models are already good at a wide variety of tasks.\n\n By Kevin Roose\n\nAdvertisement\n\n## Latest\n\n### Instagram Will Limit Content for Teenagers Based on PG-13 Ratings [...] OpenAI Inks Deal With Broadcom to Design Its Own Chips for A.I.\n\nAfter signing multibillion-dollar agreements to use chips from Nvidia and AMD, OpenAI plans to deploy its own designs next year.\n\n By Cade Metz\n\n“Developing our own accelerators adds to the broader ecosystem of partners all building the capacity required to push the frontier of A.I.,” OpenAI’s chief executive, Sam Altman, said in a statement.\n\nJohn Searle, Philosopher Who Wrestled With A.I., Dies at 93",
+            "score": 0.588062,
+            "raw_content": null
+        },
+        {
+            "url": "https://news.mit.edu/topic/artificial-intelligence2",
+            "title": "Artificial intelligence | Massachusetts Institute of Technology",
+            "content": "An algorithm can change the face of food assistance policy in the Global South, says MIT assistant professor and J-WAFS researcher Ali Aouad.\n\nOctober 14, 2025\n\nRead full story →\n\nStylized sphere-like circuit board\n\n### Checking the quality of materials just got easier with a new AI tool\n\nActing as a “virtual spectrometer,” SpectroGen generates spectroscopic data in any modality, such as X-ray or infrared, to quickly assess a material’s quality.\n\nOctober 14, 2025\n\nRead full story → [...] New tool from MIT CSAIL creates realistic virtual kitchens and living rooms where simulated robots can interact with models of real-world objects, scaling up training data for robot foundation models.\n\nOctober 8, 2025\n\nRead full story →\n\nA smiling woman with brown hair sitting behind a table with her hands clasped.\n\n### Fighting for the health of the planet with AI\n\nAssistant Professor Priya Donti’s research applies machine learning to optimize renewable energy.\n\nOctober 7, 2025 [...] The new “CRESt” platform could help find solutions to real-world energy problems that have plagued the materials science and engineering community for decades.\n\nSeptember 25, 2025\n\nRead full story →\n\nMultiple medical scans of a brain\n\n### New AI system could accelerate clinical research\n\nBy enabling rapid annotation of areas of interest in medical images, the tool can help scientists study new treatments or map disease progression.\n\nSeptember 25, 2025\n\nRead full story →\n\n#### Pagination",
+            "score": 0.5726516,
+            "raw_content": null
+        },
+        {
+            "url": "https://www.cnbc.com/2025/10/14/ai-infrastructure-boom-masks-potential-us-recession-analyst-warns.html",
+            "title": "AI infrastructure boom masks potential U.S. recession, analyst warns",
+            "content": "Global AI spending is projected to reach $375 billion in 2025 and $500 billion by 2026, fueling GDP growth and market optimism. Economists warn that without AI",
+            "score": 0.42062396,
+            "raw_content": null
+        }
+    ],
+    "response_time": 3.47,
+    "request_id": "2a6980db-8ea9-4132-a2a8-bec8624a29eb"
+}
