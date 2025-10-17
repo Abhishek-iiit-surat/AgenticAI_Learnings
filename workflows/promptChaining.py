@@ -54,20 +54,24 @@ graph.add_node("generate_story", generate_story)
 graph.add_node("improve_story", improve_story)
 graph.add_node("finalize_story", finalize_story)
 
-# Flow:
+# Flow
 graph.add_edge(START, "generate_story")
 
-# Conditional branching based on check_conflict
+# Conditional branching and looping
 graph.add_conditional_edges(
-    "generate_story",  # branching after this node
-    check_conflict,    # function returning "Pass" or "Fail"
+    "generate_story",  # after first story creation
+    check_conflict,
     {"Pass": "finalize_story", "Fail": "improve_story"}
 )
 
-graph.add_edge("improve_story", "finalize_story")
+graph.add_conditional_edges(
+    "improve_story",  # after improvement, recheck
+    check_conflict,
+    {"Pass": "finalize_story", "Fail": "improve_story"}  # loop back if still failing
+)
 graph.add_edge("finalize_story", END)
 
 graph_builder = graph.compile() 
-for chunk in graph_builder.stream( {"topic": "A space adventure"},stream="updates"):
+for chunk in graph_builder.stream( {"topic": "A horror story about a nun"},stream="updates"):
     print(chunk)
 
