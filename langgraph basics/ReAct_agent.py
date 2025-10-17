@@ -15,6 +15,7 @@ from langgraph.prebuilt import ToolNode, tools_condition
 from langchain_community.tools import ArxivQueryRun, WikipediaQueryRun
 from langchain_community.utilities import ArxivAPIWrapper,WikipediaAPIWrapper
 from langchain_tavily import TavilySearch
+import asyncio
 # from langchain_tavily import TavilySearch
 
 load_dotenv()
@@ -112,13 +113,34 @@ graph = builder.compile(checkpointer=memory)
 # for m in messages["messages"]:
 #     m.pretty_print()
 
-# STREAMING IN THE GRAPH
+# STREAMING IN THE GRAPH sync
 
-while True:
-    config = {"configurable":{"thread_id":"1"}}
-    user_query = input("User: ")
-    if user_query.lower() in ["exit","quit"]:
-        break
-    for chunk in graph.stream( {"messages": [HumanMessage(content=user_query)]}, config={"configurable": {"thread_id": "1"}}, stream="values"):
-        print(chunk)
+# while True:
+#     config = {"configurable":{"thread_id":"1"}}
+#     user_query = input("User: ")
+#     if user_query.lower() in ["exit","quit"]:
+#         break
+#     for chunk in graph.stream( {"messages": [HumanMessage(content=user_query)]}, config={"configurable": {"thread_id": "1"}}, stream="values"):
+#         print(chunk)
+
+# ASTREAM IN GRAPH async
+async def main():
+    config = {"configurable": {"thread_id": "1"}}
+
+    while True:
+        user_query = input("User: ")
+
+        if user_query.lower() in ["exit", "quit"]:
+            break
+
+        async for event in graph.astream_events(
+            {"messages": [user_query]},
+            config=config,
+            stream="values",
+            version="v2"
+        ):
+            print(event)
+
+# Run the async function
+asyncio.run(main())
     
