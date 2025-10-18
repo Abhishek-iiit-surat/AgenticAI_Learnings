@@ -42,7 +42,7 @@ def generate_charachters(state: State):
 def finalize_story(state: State):
     msg = llm.invoke(
         f"Using the story premise: '{state['story_premise']}', setting: '{state['story_setting']}', "
-        f"and charachters: '{state['charachters']}', write a complete engaging story."
+        f"and charachters: '{state['charachters']}', write a complete engaging story in hinglish."
     )
     return {"final_Story": msg.content}
 
@@ -56,16 +56,11 @@ def merge_story_elements(state: State):
     }
 
 def story_writer_txt(state: State):
-    # Sanitize title for filename
     safe_title = re.sub(r'[\\/*?:"<>|\n]', "", state["story_title"]).strip()
     if len(safe_title) > 100:
         safe_title = safe_title[:100]
-
-    # Open a text file for writing
     with open(f"{safe_title}.txt", "w", encoding="utf-8") as f:
-        # Write title
         f.write(state["story_title"] + "\n\n")
-        # Write the story content
         f.write(state["final_Story"])
 
     print(f"Story saved as {safe_title}.txt")
