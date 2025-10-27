@@ -8,3 +8,7 @@ ipython
 arxiv
 wikipedia
 langchain-tavily
+fastapi
+uvicorn
+watchdog
+langgraph-cli[inmem]
